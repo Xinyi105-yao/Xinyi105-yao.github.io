@@ -1,0 +1,42 @@
+---
+title: "Xinyi's Resume"
+output: html_document
+---
+
+![](images/xinyi.jpg)
+
+# Education
+**Columbia University**, Mailman School of Public Health — M.S. in Biostatistics (Public Health Data Science track) | 2024–present
+
+Coursework: Data Science, Probability, Biostatistics Methods, Epidemiology
+
+**Northeastern University** — B.S. in Biology (Minor in Data Science) | Jan 2021 – May 2024
+
+Selected coursework: Genetics, Biostatistics, Biochemistry, Animal Behavior, Programming with Data, Database Design.
+
+# Skills
+- Programming & Analytics: R, Python, SQL; tidyverse, ggplot
+- Tools: Git/GitHub, R Markdown, Excel, PowerPoint
+- Laboratory: qPCR, gel electrophoresis, DNA purification, microscopy, culturing
+- Languages: Chinese (Native), English (Profession)
+
+# Experience
+
+**Haitong Securities Co., Ltd. — Analyst, Healthcare (Research Institute)** | Sep 2024 – Dec 2024, Shanghai
+
+- Analyzed financials and policy impacts (national and volume-based procurement) for pharma firms.
+- Built Excel/R visualizations; presented insights to management and clients.
+
+**Shanghai Pharma — Project Information Management** | May 2023 – Jul 2023, Shanghai
+
+- Researched antibody–drug conjugates (ADCs); synthesized clinical literature and trial data.
+- Produced comparative presentations on efficacy, safety, and applications.
+
+# Interests and Hobbies
+I love exploring new places—from quiet coastal towns to busy city markets—and I almost always come home with photos and a new snack obsession. I’m also a lifelong animal person and spend my off-hours caring for my pets and volunteering at local shelters when I can.
+
+Here are pictures of my cats.
+
+![](images/bread.jpg){width=300px} ![](images/rice_cake.jpg){width=300px} 
+
+Go back to the [homepage](index.html).
