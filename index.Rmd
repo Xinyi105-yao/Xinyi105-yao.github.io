@@ -1,0 +1,26 @@
+---
+title: "Welcome to Xinyi's awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnZuMHVhbjNiYXo5bnY1MTFmaDl2Y3lqejY3aWJ2bnBlNzUxdWJ6eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DyQrKMpqkAhNHZ1iWe/giphy.gif)
+
+This website was coded by Xinyi Yao using RMarkdown to do all the hard work.
+
+# Hi! I'm Xinyi Yao.
+
+I’m a master’s student in Biostatistics at Columbia University, Public Health Data Science track. My interests sit at the intersection of statistical modeling, machine learning, and public health.
+Right now, I’m focused on:
+
+- Translating health questions into models and causal frameworks.
+- Building end-to-end pipelines in R with R Markdown and git.
+- Turning messy data into clear, decision-ready visuals and summaries.
+
+On this site you’ll find my [resume](resume.html), [selected projects](repositories.html), and link to [professional profiles](https://www.linkedin.com/in/xinyi-yao105).
+
+# Others
+Check out [this page](plots.html) with plots.
+
