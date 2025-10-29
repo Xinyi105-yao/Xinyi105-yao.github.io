@@ -1,0 +1,80 @@
+---
+title: "Plotly Flexdashboard - Instacart"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+---
+
+```{r message=FALSE}
+# Load library
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+```{r}
+# Set seed
+data("instacart")
+set.seed(500)
+
+# Randomly sample
+insta_small <-
+  instacart |>
+  slice_sample(n = 10000)
+```
+
+### Bar plot: Order volume by hour
+
+```{r}
+hour_counts <- insta_small |>
+count(order_hour_of_day) |>
+arrange(order_hour_of_day)
+
+hour_counts |>
+plot_ly(
+  x = ~order_hour_of_day, y = ~n,
+  type = "bar") |>
+layout(
+  xaxis = list(title = "Hour of day"),
+  yaxis = list(title = "Number of items ordered"),
+  bargap = 0.1)
+
+```
+
+### Box plot: Cart position by department
+
+```{r}
+# Top-10 departments by frequency
+top_depts <- 
+  insta_small |>
+  count(department, sort = TRUE) |>
+  slice_head(n = 10) |>
+  pull(department)
+
+# Boxplot of cart position by department
+insta_small |>
+  filter(department %in% top_depts) |>
+  mutate(department = fct_reorder(department, add_to_cart_order, .fun = median)) |>
+  plot_ly(
+    x = ~department, y = ~add_to_cart_order,
+    type = "box", boxpoints = "outliers")
+```
+
+### Scatterplot: Order Number vs. Add to Cart Order
+
+```{r}
+insta_small |>
+  mutate(text_label = str_c("Order#: ", order_number, 
+                            "\nAdd-to-cart#: ", add_to_cart_order, 
+                            "\nDept: ", department)) |>
+  plot_ly(
+    x = ~order_number,
+    y = ~add_to_cart_order,
+    type = "scatter", mode = "markers",
+    text = ~text_label, alpha = 0.5)
+```
+
+Go back to the [homepage](index.html).
